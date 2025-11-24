@@ -2,7 +2,7 @@ const searchBox = document.getElementById("searchBox");
 const itemList = document.getElementById("itemList");
 
 // 1. Load JSON
-fetch("./colorlist.json")
+fetch("./colourlist.json")
   .then(res => res.json())
   .then(data => {
       // Create list items from JSON
