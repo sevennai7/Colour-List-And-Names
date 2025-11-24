@@ -2,10 +2,10 @@
   "red": "#FF0000",
   "black": "#000000",
   "tan": "#D2B48C",
-  "Medium Violet Red": "#C71585",
-  "Medium Slate Blue": "#7B68EE",
+  "red violet": "#C71585",
+  "medium slate blue": "#7B68EE",
   "turquoise": "#40E0D0",
-  "Dark Slate Blue": "#483D8B",
+  "royal purple": "#483D8B",
   "bisque": "#FFE4C4",
   "green": "#00FF00",
   "yellow": "#FFFF00",
@@ -13,12 +13,25 @@
   "brown": "#964B00",
   "orange": "#FFA500",
   "pink": "#FFC0CB",
-  "Navajo White": "#FFDEAD",
+  "navajo white": "#FFDEAD",
   "light pink": "#FFB6C1",
-  "Cadet Blue": "#5F9EA0",
-  "Ghost White": "#F8F8FF",
+  "cadet blue": "#5F9EA0",
+  "ghost white": "#F8F8FF",
   "sienna": "#A0522D",
   "white": "#FFFFFF",
   "purple": "#800080",
   "gray": "#808080"
+  "soft yellow": "#EDAF51"
+  "vivid blue": "#1836FD"
+  "pantone 2352 c": "#B565A7"
+  "milk chocolate": "#573020"
+  "victoria": "#331265"
+  "street sign green": "#168171"
+  "fuchsia": "#AA246E"
+  "whimsical pink": "#E258BE"
+  "neon yellow": "#EBFA46"
+  "military cyan": "#569BA1"
+  "desaturated brown": "#A97B61"
+  "sea eel green": "#469868"
+  "pantone p 154-13 c": "#95B66B"
 }
