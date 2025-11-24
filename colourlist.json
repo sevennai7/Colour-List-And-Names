@@ -1,24 +1,24 @@
 {
-  "red", "FF0000",
-  "black", "000000",
-  "tan", "D2B48C",
-  "Medium Violet Red", "C71585",
-  "Medium Slate Blue", "7B68EE",
-  "turquoise", "40E0D0",
-  "Dark Slate Blue", "483D8B",
-  "bisque", "FFE4C4",
-  "green", "00FF00",
-  "yellow", "FFFF00",
-  "blue", "0000FF",
-  "brown", "#964B00"
-  "orange", "FFA500",
-  "pink", "FFC0CB"
-  "Navajo White", "FFDEAD",
-  "light pink",  "FFB6C1",
-  "Cadet Blue", "5F9EA0",
-  "Ghost White", "F8F8FF",
-  "sienna", "A0522D",
-  "white", "FFFFFF"
-  "purple", "800080"
-  "gray", "808080"
+  "red": "FF0000",
+  "black": "000000",
+  "tan": "D2B48C",
+  "Medium Violet Red": "C71585",
+  "Medium Slate Blue": "7B68EE",
+  "turquoise": "40E0D0",
+  "Dark Slate Blue": "483D8B",
+  "bisque": "FFE4C4",
+  "green": "00FF00",
+  "yellow": "FFFF00",
+  "blue": "0000FF",
+  "brown": "#964B00"
+  "orange": "FFA500",
+  "pink": "FFC0CB"
+  "Navajo White": "FFDEAD",
+  "light pink": "FFB6C1",
+  "Cadet Blue": "5F9EA0",
+  "Ghost White": "F8F8FF",
+  "sienna": "A0522D",
+  "white": "FFFFFF"
+  "purple": "800080"
+  "gray": "808080"
 }
