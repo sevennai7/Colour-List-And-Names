@@ -1,26 +1,27 @@
-function log(msg) {
-  const div = document.createElement("div");
-  div.style.color = "white";
-  div.style.background = "red";
-  div.style.padding = "10px";
-  div.style.fontSize = "18px";
-  div.style.fontFamily = "monospace";
-  div.style.borderBottom = "2px solid black";
-  div.textContent = msg;
-  document.body.prepend(div);
-}
+const searchBox = document.getElementById("searchBox");
+const itemList = document.getElementById("itemList");
 
-log("JS loaded. Starting fetch...");
-
+// 1. Load JSON
 fetch("./colourlist.json")
-  .then(r => {
-    log("Fetch status: " + r.status);
-    return r.json();
-  })
+  .then(res => res.json())
   .then(data => {
-    log("JSON loaded successfully.");
-    console.log(data);
-  })
-  .catch(err => {
-    log("FETCH ERROR: " + err);
+      // Create list items from JSON
+      for (const key in data) {
+          const li = document.createElement("li");
+          li.textContent = key; // or `${key}: ${data[key]}`
+          itemList.appendChild(li);
+      }
+
+      // IMPORTANT: Items exist NOW, so get them NOW
+      const items = itemList.getElementsByTagName("li");
+
+      // 2. Add search functionality
+      searchBox.addEventListener("keyup", function() {
+          let filter = searchBox.value.toLowerCase();
+
+          for (let i = 0; i < items.length; i++) {
+              let text = items[i].textContent.toLowerCase();
+              items[i].style.display = text.includes(filter) ? "" : "none";
+          }
+      });
   });
