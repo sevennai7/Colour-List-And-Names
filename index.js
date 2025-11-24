@@ -10,7 +10,7 @@ fetch("./colourlist.json")
           const hex = data[key];
 
           const li = document.createElement("li");
-          li.textContent = key;
+          li.textContent = `${key} (${hex})`;
 
           // Apply background colour
           li.style.setProperty("background-color", hex, "important");
