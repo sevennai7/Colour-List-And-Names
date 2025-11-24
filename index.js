@@ -13,7 +13,7 @@ fetch("./colourlist.json")
           li.textContent = key;
 
           // ⭐ APPLY BACKGROUND COLOR
-          li.style.backgroundColor = hex;
+          li.style.setProperty("background-color", hex, "important");
           li.style.padding = "10px";
           li.style.borderRadius = "8px";
           li.style.marginBottom = "6px";
