@@ -17,7 +17,7 @@ fetch("./colourlist.json")
           li.style.padding = "10px";
           li.style.borderRadius = "8px";
           li.style.marginBottom = "6px";
-          li.style.color = isDark(hex) ? "white" : "black";
+          li.style.setProperty("color", isDark(hex) ? "white" : "black", "important");
 
           itemList.appendChild(li);
       }
