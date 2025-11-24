@@ -12,7 +12,7 @@ fetch("./colourlist.json")
           const li = document.createElement("li");
           li.textContent = key;
 
-          // ⭐ APPLY BACKGROUND COLOR
+          // Apply background colour
           li.style.setProperty("background-color", hex, "important");
           li.style.padding = "10px";
           li.style.borderRadius = "8px";
