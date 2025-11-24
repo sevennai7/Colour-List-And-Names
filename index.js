@@ -7,8 +7,18 @@ fetch("./colourlist.json")
   .then(data => {
       // Create list items from JSON
       for (const key in data) {
+          const hex = data[key];
+
           const li = document.createElement("li");
-          li.textContent = key; // or `${key}: ${data[key]}`
+          li.textContent = key;
+
+          // ⭐ APPLY BACKGROUND COLOR
+          li.style.backgroundColor = hex;
+          li.style.padding = "10px";
+          li.style.borderRadius = "8px";
+          li.style.marginBottom = "6px";
+          li.style.color = isDark(hex) ? "white" : "black";
+
           itemList.appendChild(li);
       }
 
@@ -25,3 +35,18 @@ fetch("./colourlist.json")
           }
       });
   });
+
+// Helper function for readable text
+function isDark(hex) {
+    hex = hex.replace("#", ""); // remove # if present
+
+    // Extract R, G, B components
+    const r = parseInt(hex.substring(0, 2), 16);
+    const g = parseInt(hex.substring(2, 4), 16);
+    const b = parseInt(hex.substring(4, 6), 16);
+
+    // Perceived brightness formula
+    const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+
+    return brightness < 130; // darker colors return true
+}
